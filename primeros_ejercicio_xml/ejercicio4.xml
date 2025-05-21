@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cursos SYSTEM "ejercicio4.dtd">
+<cursos>
+    <curso>
+        <nombre>Informatica</nombre>
+        <descripcion>Curso de informatica</descripcion>
+        <profesor>Pepe</profesor>
+        <profesor>Carlos</profesor>
+        <modulo>
+            <titulo>Modulo 1</titulo>
+            <leccion>Leccion 7</leccion>
+            <leccion>Leccion 17</leccion>
+            <leccion>Leccion 27</leccion>
+        </modulo>
+        <modulo>
+            <titulo>Modulo 2</titulo>
+            <leccion>Leccion 5</leccion>
+        </modulo>
+    </curso>
+    <curso>
+        <nombre>Economia</nombre>
+        <tutor>Juan</tutor>
+        <modulo>
+            <titulo>Modulo 5</titulo>
+            <leccion>Leccion 85</leccion>
+        </modulo>
+    </curso>
+    <curso>
+        <nombre>Literatura</nombre>
+        <profesor>Eva</profesor>
+    </curso>
+</cursos>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coleccion>
+    <discos>
+        <disco nombre="disco1">
+            <pelicula>El señor de los anillos</pelicula>
+            <compositor>Pedro</compositor>
+            <anio>1998</anio>
+            <premios>
+                <premio>Oscar mejor banda sonora</premio>
+                <premio>Premio mejor cancion - Festival San Sebastian</premio>
+            </premios>
+            <compresion>MP4</compresion>
+        </disco>
+        <disco nombre="disco2">
+            <pelicula>Peter Pan</pelicula>
+            <compositor>Pepe</compositor>
+            <anio>1960</anio>
+            <premios>
+                <premio>Oscar mejor cancion animacion</premio>
+            </premios>
+            <compresion>MP3</compresion>
+        </disco>
+    </discos>
+</coleccion>

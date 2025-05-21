@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coleccion>
+    <album nombre="Album Madrid">
+        <fotografias>
+            <fotografia>
+                <lugar>Madrid</lugar>
+                <fecha>
+                    <dia>21/05/2025</dia>
+                    <hora>11:40</hora>
+                </fecha>
+                <camara>Canon</camara>
+                <personas>7</personas>
+                <monumento>Puerta del Sol</monumento>
+            </fotografia>
+            <fotografia>
+                <lugar>Madrid</lugar>
+                <fecha>
+                    <dia>21/05/2025</dia>
+                    <hora>11:50</hora>
+                </fecha>
+                <camara>Nikon</camara>
+                <personas>4</personas>
+                <monumento>Puerta de Alcala</monumento>
+            </fotografia>
+        </fotografias>
+    </album>
+    <album nombre="Album Barcelona">
+        <fotografias>
+            <fotografia>
+                <lugar>Barcelona</lugar>
+                <fecha>
+                    <dia>20/05/2025</dia> 
+                    <hora>11:00</hora>
+                </fecha>
+                <camara>Nikon</camara>
+                <personas>3</personas>
+                <monumento>Sagrada familia</monumento>
+            </fotografia>
+            <fotografia>
+                <lugar>Barcelona</lugar>
+                <fecha>
+                    <dia>20/05/2025</dia>
+                    <hora>12:00</hora>
+                </fecha>
+                <camara>Canon</camara>
+                <personas>8</personas>
+                <monumento>Camp Nou</monumento>
+            </fotografia>
+        </fotografias>
+    </album>
+</coleccion>

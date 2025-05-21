@@ -1,0 +1,9 @@
+<!ELEMENT cursos (curso+)>
+<!ELEMENT curso (nombre, descripcion?, (profesor | tutor)+, modulo*)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT profesor (#PCDATA)>
+<!ELEMENT tutor (#PCDATA)>
+<!ELEMENT modulo (titulo, leccion+)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT leccion (#PCDATA)>

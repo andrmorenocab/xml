@@ -1,23 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Restricción de edad > 12 -->
+    <xs:simpleType name="edadMayor12">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="13"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Restricción de idioma -->
+    <xs:simpleType name="idiomaTipo">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="español"/>
+            <xs:enumeration value="ingles"/>
+            <xs:enumeration value="frances"/>
+        </xs:restriction>
+    </xs:simpleType>
+
     <xs:element name="visitas">
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="visita" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="fecha" type="xs:string" />
-                            <xs:element name="guia" type="xs:string" />
+                            <xs:element name="fecha" type="xs:string"/>
+                            <xs:element name="guia" type="xs:string"/>
                             <xs:element name="visitantes">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="visitante" maxOccurs="unbounded">
+                                        <xs:element name="visitante" minOccurs="1" maxOccurs="3">
                                             <xs:complexType>
                                                 <xs:simpleContent>
                                                     <xs:extension base="xs:string">
-                                                        <xs:attribute name="edad" type="xs:integer"
-                                                            use="required" />
-                                                        <xs:attribute name="idioma" use="required" />
+                                                        <xs:attribute name="edad" type="edadMayor12" use="required"/>
+                                                        <xs:attribute name="idioma" type="idiomaTipo" use="required"/>
                                                     </xs:extension>
                                                 </xs:simpleContent>
                                             </xs:complexType>

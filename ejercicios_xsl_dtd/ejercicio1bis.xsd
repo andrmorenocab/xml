@@ -11,7 +11,15 @@
                             <xs:element name="fecha" type="xs:string" />
                             <xs:element name="tecnico_asignado" minOccurs="0" type="xs:string" />
                         </xs:sequence>
-                        <xs:attribute name="prioridad" use="required" />
+                        <xs:attribute name="prioridad" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="alta"/>
+                                    <xs:enumeration value="media"/>
+                                    <xs:enumeration value="baja"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>

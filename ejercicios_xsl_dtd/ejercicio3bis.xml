@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="ejercicio3bis.xsd"?>
+<participaciones>
+    <participacion categoria="paisaje">
+        <titulo>participacion 1</titulo>
+        <foto>
+            <titulo_foto>titulo foto 1</titulo_foto>
+            <archivo>foto.jpg</archivo>
+        </foto>
+        <comentarios>Comentarios</comentarios>
+    </participacion>
+    <participacion categoria="retrato">
+        <titulo>participacion 2</titulo>
+        <foto>
+            <titulo_foto>titulo foto 2</titulo_foto>
+            <archivo>imagen.jpg</archivo>
+        </foto>
+        <comentarios>Comentarios</comentarios>
+    </participacion>
+    <participacion categoria="abstracto">
+        <titulo>participacion 3</titulo>
+        <foto>
+            <titulo_foto>titulo foto 3</titulo_foto>
+            <archivo>foto.png</archivo>
+        </foto>
+    </participacion>
+</participaciones>

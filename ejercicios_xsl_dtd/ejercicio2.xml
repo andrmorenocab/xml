@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE visitas SYSTEM "ejercicio2.dtd">
+<visitas>
+    <visita>
+        <fecha>26-05-2025</fecha>
+        <guia>pepe</guia>
+        <visitantes>
+            <visitante edad="13" idioma="español">Manuel</visitante>
+            <visitante edad="15" idioma="ingles">Carlos</visitante>
+            <visitante edad="25" idioma="ingles">Pepe</visitante>
+        </visitantes>
+    </visita>
+    <visita>
+        <fecha>26-05-2025</fecha>
+        <guia>juan</guia>
+        <visitantes>
+            <visitante edad="27" idioma="frances">Juan</visitante>
+            <visitante edad="24" idioma="frances">Luis</visitante>
+        </visitantes>
+    </visita>
+    <visita>
+        <fecha>26-05-2025</fecha>
+        <guia>carlos</guia>
+        <visitantes>
+            <visitante edad="31" idioma="ingles">Alejandro</visitante>
+        </visitantes>
+    </visita>
+</visitas>

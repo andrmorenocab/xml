@@ -1,0 +1,10 @@
+<!ELEMENT participaciones (participacion+)>
+<!ELEMENT participacion (titulo,foto,comentarios?)>
+<!ATTLIST participacion
+    categoria (paisaje | retrato | abstracto) #REQUIRED
+>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT foto (titulo_foto,archivo)>
+<!ELEMENT titulo_foto (#PCDATA)>
+<!ELEMENT archivo (#PCDATA)>
+<!ELEMENT comentarios (#PCDATA)>

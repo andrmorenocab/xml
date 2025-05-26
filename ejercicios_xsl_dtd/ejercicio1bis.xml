@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="ejercicio1bis.xsd"?>
+<sistema_incidencias>
+    <reporte prioridad="alta">
+        <titulo>reporte 1</titulo>
+        <descripcion>descripcion 1</descripcion>
+        <fecha>26-05-2025</fecha>
+        <tecnico_asignado>pepe</tecnico_asignado>
+    </reporte>
+    <reporte prioridad="baja">
+        <titulo>reporte 2</titulo>
+        <descripcion>descripcion 2</descripcion>
+        <fecha>25-05-2025</fecha>
+        <tecnico_asignado>carlos</tecnico_asignado>
+    </reporte>
+    <reporte prioridad="media">
+        <titulo>reporte 3</titulo>
+        <descripcion>descripcion 3</descripcion>
+        <fecha>24-05-2025</fecha>
+    </reporte>
+</sistema_incidencias>

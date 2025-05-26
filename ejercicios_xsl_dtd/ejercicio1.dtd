@@ -1,0 +1,9 @@
+<!ELEMENT sistema_incidencias (reporte+)>
+<!ELEMENT reporte (titulo,descripcion,fecha,tecnico_asignado?)>
+<!ATTLIST reporte
+    prioridad (alta | media | baja) #REQUIRED
+>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT tecnico_asignado (#PCDATA)>

@@ -1,0 +1,10 @@
+<!ELEMENT visitas (visita+)>
+<!ELEMENT visita (fecha,guia,visitantes)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT guia (#PCDATA)>
+<!ELEMENT visitantes (visitante, visitante?, visitante?)>
+<!ELEMENT visitante (#PCDATA)>
+<!ATTLIST visitante
+    idioma (español | ingles | frances) #REQUIRED
+>
+<!ATTLIST visitante edad NMTOKEN #REQUIRED>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-    <!-- Restricción de edad > 12 -->
+    <!--edad > 12-->
     <xs:simpleType name="edadMayor12">
         <xs:restriction base="xs:integer">
             <xs:minInclusive value="13"/>
         </xs:restriction>
     </xs:simpleType>
 
-    <!-- Restricción de idioma -->
+    <!--idioma-->
     <xs:simpleType name="idiomaTipo">
         <xs:restriction base="xs:string">
             <xs:enumeration value="español"/>

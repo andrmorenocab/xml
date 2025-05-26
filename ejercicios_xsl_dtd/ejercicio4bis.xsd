@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!--duracion entre 1 y 30-->
+    <xs:simpleType name="duracion">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="30"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="agenda_medica">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="cita" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="paciente" type="xs:string" />
+                            <xs:element name="fecha" type="xs:string" />
+                            <xs:element name="motivo" type="xs:string" />
+                            <xs:element name="tratamientos" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="tratamiento" minOccurs="0" maxOccurs="2">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="nombre" type="xs:string" />
+                                                </xs:sequence>
+                                                <xs:attribute name="duracion" type="duracion" use="required" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

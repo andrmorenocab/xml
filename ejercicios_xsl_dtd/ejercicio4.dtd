@@ -1,0 +1,9 @@
+<!ELEMENT agenda_medica (cita+)>
+<!ELEMENT cita (paciente,fecha,motivo,tratamientos)>
+<!ELEMENT paciente (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT motivo (#PCDATA)>
+<!ELEMENT tratamientos (tratamiento?, tratamiento?)>
+<!ELEMENT tratamiento (nombre)>
+<!ATTLIST tratamiento duracion NMTOKEN #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
